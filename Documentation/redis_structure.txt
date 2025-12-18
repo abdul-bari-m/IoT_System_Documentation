@@ -1,0 +1,40 @@
+Redis Real-Time Data Structure
+----------------------------
+
+Purpose:
+Redis is used to handle real-time sensor data where fast access is important.
+It stores only the most recent sensor readings so the dashboard can load quickly.
+
+Data Stored:
+- Latest sensor value for each device
+- Temporary data meant for short-term use
+
+Key Design:
+- Format: device:<device_id>:latest_temperature
+- Example: device:dev101:latest_temperature
+
+Value:
+- Current temperature value (for example, 27.5)
+
+Expiration (TTL):
+- Each key has a short expiry time, such as 60 seconds
+- This prevents outdated values from staying in memory
+
+Example Entry:
+Key: device:dev101:latest_temperature
+Value: 27.5
+TTL: 60 seconds
+
+Usage Pattern:
+- When new sensor data arrives, Redis is updated first
+- The web dashboard requests the latest value from Redis
+- If the value is not available, the system reads from InfluxDB
+
+Why Redis:
+- Very fast read and write operations
+- Reduces unnecessary queries to the database
+- Well suited for live monitoring dashboards
+
+Role in the System:
+Redis is responsible for real-time data access,
+while InfluxDB is used for storing historical sensor data.

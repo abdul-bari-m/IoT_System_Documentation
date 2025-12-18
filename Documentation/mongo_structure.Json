@@ -1,0 +1,9 @@
+'{
+  "collection": "sensor_data",
+  "fields": {
+    "device_id": "string",
+    "sensor_type": "string",
+    "value": "number",
+    "timestamp": "ISODate"
+  }
+}
