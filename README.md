@@ -43,10 +43,9 @@ This separation allows fast access to live data while still keeping a complete h
 
 The architecture diagram shows all major components and how they are connected.
 
-📌 File:
+Diagram:
 
-```
-architecture_diagram.png
+<img width="435" height="790" alt="architecture_diagram" src="https://github.com/user-attachments/assets/bab1e07a-930e-4ff5-b180-bc2834f2f044" />
 ```
 
 **Key components**
@@ -66,20 +65,18 @@ architecture_diagram.png
 
 Shows the system as a single unit interacting with external entities.
 
-📌 File:
+Diagam:
 
-```
-dataflow_diagram_0.png
+<img width="756" height="221" alt="dataflow_diagram_0" src="https://github.com/user-attachments/assets/9dc82283-c94f-4e81-8584-e07c3b9e9db1" />
 ```
 
 ### DFD Level 1
 
 Breaks the system into internal components and shows detailed data movement.
 
-📌 File:
+Diagram:
 
-```
-dataflow_diagram_1.png
+<img width="856" height="514" alt="dataflow_diagram_1" src="https://github.com/user-attachments/assets/348d6ff6-814d-4948-b259-4f54ad18e605" />
 ```
 
 **Main flows**
