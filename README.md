@@ -68,7 +68,6 @@ Shows the system as a single unit interacting with external entities.
 Diagam:
 
 <img width="756" height="221" alt="dataflow_diagram_0" src="https://github.com/user-attachments/assets/9dc82283-c94f-4e81-8584-e07c3b9e9db1" />
-```
 
 ### DFD Level 1
 
@@ -77,7 +76,6 @@ Breaks the system into internal components and shows detailed data movement.
 Diagram:
 
 <img width="856" height="514" alt="dataflow_diagram_1" src="https://github.com/user-attachments/assets/348d6ff6-814d-4948-b259-4f54ad18e605" />
-```
 
 **Main flows**
 
